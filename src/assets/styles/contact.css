@@ -1,0 +1,84 @@
+
+   
+.Contact1{
+    background-color: #272626;
+background-image: url('../img/slider1.webp');
+
+padding: 5rem 0;
+opacity: 0.9;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+.contact_edit{
+    text-align: center;
+    color: white;
+}
+.contact_edit span{
+    font-size: 20px;
+}
+.contact_edit h1{
+    color: white;
+}
+.contact_edit .home_edit:hover{
+    color: #a99577;
+}
+.contact_edit .home_edit{
+    transition: 1s;
+    cursor: pointer;
+}
+.connection{
+    padding: 3rem 0;
+}
+.connection h2{
+    font-size: 20px;
+    
+}
+.connection .all{
+    display: flex;
+   text-align: left;
+}
+.connection .box{
+    
+    border: 1px solid rgb(250, 219, 219);
+    padding: 47px 20px;
+    width: 320px;
+}
+.connection .icon_edit{
+    border: 1px solid green;
+    padding: 13px 16px;
+    background-color: #272626;
+    color: white;
+    display: inline block;
+}
+.connection h3{
+    font-size: 22px;
+    margin-top: 30px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+.connection h5{
+    font-size: 18px;
+    opacity: 0.8;
+}
+.form_edit{
+    width: 30%;
+    text-align: left;
+}
+.message_edit{
+    padding: 7rem 0;
+    width: 700px;
+    
+}
+    
+
+@media screen and (max-width: 992px){
+    .allofthem{
+        width: 100%;
+    }
+    .cnc_edit{
+        margin-left: 175px;
+        margin-top: 30px;
+
+    }
+}

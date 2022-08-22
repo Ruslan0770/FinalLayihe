@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header .center span{
+    margin-left: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+    
+}
+.Header .center .span_header_edit{
+    text-decoration: none;
+}
+.Header .right span{
+    font-size: 25px;
+    margin-left: 15px;
+    transition: 1s;
+}
+.Header .center .span_home_edit1{
+    color: #a99577;
+}
+.Header .left img{
+    width: 60%;
+    margin-top: 10px;
+}
+.Header .right span:hover {
+    color: #a99577;
+}
+.Header .right .span_edit{
+    position: relative;
+}
+.Header .right .span_count{
+    font-size: 15px;
+    position: absolute;
+    right: 103px;
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .Header{
+        width: 100%;
+        
+    }
+    .Header .left img{
+        width: 18%;
+        
+    }
+    .Header .left{
+        text-align: left;
+        
+        margin-top: 20px;
+    }
+    .Header .center{
+        display: none;
+    }
+    .Header .right{
+       margin-top: -40px;
+       margin-right: 45px;
+       
+    }
+    .Header .right span{
+       font-size: 25px;
+        
+     }
+     .Header .right .span_edit{
+        position: relative;
+     }
+     .Header .right .span_count{
+        position: absolute;
+        display: block;
+        right: -0.1%;
+        bottom: 93%;
+        font-size: 20px;
+       
+       
+     }
+  }

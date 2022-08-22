@@ -1,0 +1,67 @@
+
+.Watch_shop{
+    padding: 5rem 0;
+}
+
+
+.about_top h3{
+    font-size: 16px;
+    letter-spacing: 0.3ch;
+    color: #a99577;
+}
+
+
+.img-edit{
+width: 100%;
+}
+
+
+.about_top h1{
+    font-weight: 400;
+}
+
+.about_left{
+    text-align: center;
+
+}
+.about_left img{
+    width: 40%;
+    text-align: right;
+    margin-top: 20px;
+}
+.about_right h2{
+    font-size: 30px;
+    transition: 0.5s;
+}
+.about_right:hover h2{
+    color: #a99577;
+}
+.about_right p{
+    font-size: 17px;
+    margin-top: 25px;
+}
+.about_right{
+    width: 350px;
+    height: 100px;
+    margin-left: -40px;
+}
+
+
+@media screen and (max-width: 992px){
+    .img-edit{
+        margin-left: 0px;
+    }
+    .about_left img{
+        width: 20%;
+        margin-top: 60px;
+    }
+    .about_right{
+        text-align: right;
+        width: 400px;
+    }
+    .about_right p{
+       text-align: center;
+     margin-left: 100px;
+     width: 400px;
+    }
+}
