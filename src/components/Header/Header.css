@@ -39,13 +39,31 @@
     right: 103px;
     
 }
+.span_header_edit span{
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+}
+
+.span_header_edit:hover span{
+  color:  #1095c1;
+  --_p: 100%
+}
 
 
 @media screen and (max-width: 992px) {
     .Header{
         width: 100%;
-        
     }
+        
     .Header .left img{
         width: 18%;
         
@@ -76,7 +94,30 @@
         right: -0.1%;
         bottom: 93%;
         font-size: 20px;
+    }
        
        
-     }
+  }
+  .navbar{
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+  }
+  .menu-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+  }
+  .nav-menu{
+    background-color: #000;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+  }
+  .nav-menu-active{
+    left: 0;
+    transition: 350ms;
   }

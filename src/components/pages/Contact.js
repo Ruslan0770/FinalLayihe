@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/styles/contact.css'
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import { MDBInput ,MDBCheckbox, MDBBtn } from 'mdb-react-ui-kit';
+
 
 
 
@@ -22,9 +22,9 @@ const Contact = () => {
 
     <section className='connection'>
       <div className="container">
-        <div className="row all align-items-center justify center">
+        <div className="row all align-items-center justify space-evenly">
          
-          <div className="col-lg-4  cnc_edit">
+          <div className="col-lg-3  cnc_edit">
             <div className="box">
             <span className='icon_edit'><BsFillTelephoneFill /></span>
             <h3>Phone</h3>
@@ -34,7 +34,7 @@ const Contact = () => {
            
 
           </div>
-          <div className="col-lg-4 cnc_edit">
+          <div className="col-lg-3 cnc_edit">
           <div className="box">
             <span className='icon_edit'><BsFillTelephoneFill /></span>
             <h3>Email</h3>
@@ -42,7 +42,7 @@ const Contact = () => {
             <h5>support@example.com</h5>
             </div>
           </div>
-          <div className="col-lg-4 cnc_edit">
+          <div className="col-lg-3 cnc_edit">
           <div className="box">
             <span className='icon_edit'><BsFillTelephoneFill /></span>
             <h3>Address</h3>
@@ -81,9 +81,24 @@ const Contact = () => {
     </section>
      */}
 
+        <section className='Edit_form'>
+          <form className='text-center' action="">
+            <label className='my-3'>
+              <input className='text-center border-danger' type="text" placeholder='Name...'/>
+              <input className='text-center border-danger' type="email" placeholder='Email...'/>
+              <input className='text-center border-danger' type="number" placeholder='Phone...'/>
+              <div className="form-group my-4">
+    <label className='label_edit' >Message...</label>
+    <textarea className="form-control my-2" id="exampleFormControlTextarea1" rows="8"></textarea>
+  </div>
 
+            </label>
+          </form>
+        </section>
 
     </div>
+)
+}
 
 
     
@@ -91,7 +106,5 @@ const Contact = () => {
         
       
     
-  )
-}
 
 export default Contact

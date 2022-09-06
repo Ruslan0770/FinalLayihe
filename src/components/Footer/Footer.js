@@ -36,12 +36,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-            <div className="bottom_footer">
-                <div className="bottom_line">
-                <p className='text-center'>© 2022 dialz-theme Design Themes</p>
-                </div>
-               
-            </div>
+           
             
     </footer>
   )

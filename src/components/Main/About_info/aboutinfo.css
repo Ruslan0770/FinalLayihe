@@ -1,19 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Main3 img:hover{
+  transform: scale(1.05);
+  clip-path: 
+  polygon(
+   0% var(--d), 
+   var(--d) 0%, 
+   100% 0%, 
+   100% calc(100% - var(--d)), 
+   calc(100% - var(--d)) 100%, 
+   0% 100%
+  )
+}
+ 
+  
+  
+.Main3 img{
+  width: 100%;
+  --c: #a99577; /* the color */
+  --b: .1em;    /* border length*/
+  --d: 20px;    /* the cube depth */
+  
+  --_s: calc(var(--d) + var(--b));
+  color: var(--c);
+  border: solid #0000;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background:
+    conic-gradient(at left var(--d)  bottom var(--d),
+      #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+    conic-gradient(at left var(--_s) bottom var(--_s),
+      #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+  clip-path: 
+    polygon(
+     var(--d) 0%, 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)),
+     100% calc(100% - var(--d)),
+     var(--d) calc(100% - var(--d))
+    );
+  transition: 0.5s;
+}
 .bottom_left img{
     object-fit: contain;
-    width: 110%;
+    width: 100%;
 }
-
+.Main3 .bottom{
+  margin-top: 40px;
+}
 .Main3{
     padding: 5rem 0;
 }
+.Main3 button{
+  padding: 13px 40px;
+  transition: 1s;
+}
+
 .bottom_right img{
-    width: 110%;
+    width: 100%;
     object-fit: contain;
 }
 
 .top_right img{
   width: 100%;
-  clip-path: path('M 0 1000 L 0,75 A 5,5 0,0,1 200 L 700 300 z');
+ 
   border-top: 50px;
   border-radius: 10px;
 }
@@ -23,10 +76,10 @@
 .all{
   
   justify-content: space-evenly;
+}
   
  
   
-}
 .a{
   display: flex;
   justify-content: end;
@@ -44,19 +97,25 @@ h4{
   font-weight: 400;
 }
 .c{
-  display: flex;
   justify-content: center;
+
 }
 @media screen and (max-width: 992px){
   .top_left{
       width: 100%;
   }
   .bottom_left img{
-      margin-left: -44px;
-  }
-  .bottom_right img{
     margin-left: -20px;
   }
+  .bottom_right img{
+    margin-top: 20px;
+    
+
+  }
+  .top_left button{
+    margin-bottom: 30px;
+  }
+  
 }
  
 

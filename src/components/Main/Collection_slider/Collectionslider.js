@@ -17,7 +17,7 @@ const Collectionslider = () => {
             <div className="slider_edit">
             <h3>NEW ARRIVALS</h3>
           <p className='p_edit'>Our Best Collections</p>
-          <button>Explore</button>
+          <button className='glow-on-hover'>Explore</button>
             </div>
           
         </Carousel.Caption>
@@ -33,7 +33,7 @@ const Collectionslider = () => {
         <div className="slider_edit">
             <h3>LATEST DESIGNS</h3>
           <p className='p_edit'>Trending Collections</p>
-          <button>Explore</button>
+          <button className='glow-on-hover'>Explore</button>
             </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -51,7 +51,7 @@ const Collectionslider = () => {
             
             
           
-          <button>Explore</button>
+          <button className='glow-on-hover'>Explore</button>
             </div>
         </Carousel.Caption>
       </Carousel.Item>

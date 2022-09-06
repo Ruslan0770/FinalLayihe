@@ -1,0 +1,32 @@
+.spring img{
+width: 25%;
+height: 430px;
+object-fit: cover;
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+margin-top: 30px;
+margin-left: 70px;
+margin-top: 50px;
+
+}
+.spring{
+    background-image: url(https://cdn.shopify.com/s/files/1/0564/2705/3216/files/bg-3.jpg?v=1633514110);
+    width: 87%;
+    height: 100vh;
+    background-position: center;
+    margin: auto;
+    margin-top: 50px;
+    
+    
+}
+@media screen and (max-width: 992px){
+    .spring img{
+        width: 70%;
+    }
+    .spring{
+        height: 650px;
+        width: 540px;
+        text-align: center;
+        
+    }
+}

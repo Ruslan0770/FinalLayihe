@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Watch_shop{
     padding: 5rem 0;
 }
@@ -45,12 +49,13 @@ width: 100%;
     height: 100px;
     margin-left: -40px;
 }
+.all_aboutpage button{
+    padding: 10px 40px;
+}
 
 
 @media screen and (max-width: 992px){
-    .img-edit{
-        margin-left: 0px;
-    }
+    
     .about_left img{
         width: 20%;
         margin-top: 60px;
@@ -64,4 +69,97 @@ width: 100%;
      margin-left: 100px;
      width: 400px;
     }
+    .about-left img{
+        margin-left: 50px;
+    }
+   .Luxwatch .about-right{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 60px;
+    }
+    .Luxwatch .bottom-about-left{
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    .Luxwatch .bottom-about-right img{
+        margin-left: 45px;
+        margin-top: 50px;
+    }
+   
+   .Allbefore{
+       display: none;
+    }
+    .Brends{
+        width: 50%;
+       margin-left: 130px;
+    } 
+    
+}
+   
+    
+    
+        
+        
+    
+    
+
+.Luxwatch{
+    background-color: #f6f4f1;
+    padding: 7rem 0;
+    
+    position: relative;
+}
+.about-left img{
+width: 80%;
+}
+.about-right{
+    width: 350px;
+    height: 300px;
+}
+.bottom-about-left{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    
+}
+.bottom-about-right img{
+    width: 80%;
+}
+.Time{
+    padding: 5rem 0 22rem 0;
+    background-color: #f8e9d2;
+    
+}
+.forbefore{
+    position: absolute;
+    border: 2px solid #f8e9d1;
+    width: 55%;
+    height: 530px;
+    left: 21%;
+    top: 300ch;
+    z-index: 111111;
+    background-color: #f8e9d2;
+}
+    
+    
+    
+    
+.forbefore_left img{
+    width: 100%;
+}
+.forbefore_right ul li{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.Brends{
+    padding: 15rem 0 6rem 0;
+}
+.forbefore_left h2{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.Brends img{
+   
+    width: 100%;
 }

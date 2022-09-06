@@ -1,6 +1,7 @@
 import React from 'react'
 import './product_slider.css'
-
+import { AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineSearch } from 'react-icons/ai';
 import Slider from "react-slick";
 
 
@@ -43,7 +44,7 @@ const Product_Slider = () => {
 
     
   return (
-   <section>
+   <section className='products' data-aos="zoom-in">
     <div className="container">
         <div className="top text-center">
             <h4>OUR PRODUCTS</h4>
@@ -51,30 +52,89 @@ const Product_Slider = () => {
         </div>
         <div className="bottom">
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 edit">
                 <Slider {...settings}>
-          <div>
+          <div className='about_box col-12'>
            <img src="https://cdn.shopify.com/s/files/1/0564/2705/3216/products/shop-6_600x.jpg?v=1634798681" alt="" />
+           <h3 className='h3_edit text-center'>Analog For Girls</h3>
+           <p className='product_p_edit text-center'>Rs.200.00</p>
+           <button className='button_hover'>Add to Card</button>
+
+           <div className="icons_edit">
+           <p><AiOutlineHeart /></p>
+           </div>
+           <div className="icons_edit1">
+           <p>< AiOutlineSearch/></p>
+           </div>
           </div>
-          <div>
+         
+           
+           
+          <div className='about_box col-12'>
           <img src="https://cdn.shopify.com/s/files/1/0564/2705/3216/products/shop-5_600x.jpg?v=1634798604" alt="" />
+          <h3 className='h3_edit text-center'>Analog For Girls</h3>
+           <p className='product_p_edit text-center'>Rs.200.00</p>
+           <button className='button_hover'>Add to Card</button>
 
+          <div className="icons_edit">
+           <p><AiOutlineHeart /></p>
+           </div>
+           <div className="icons_edit1">
+           <p>< AiOutlineSearch/></p>
+           </div>
           </div>
-          <div>
+          <div className='about_box col-12'>
           <img src="https://cdn.shopify.com/s/files/1/0564/2705/3216/products/shop-4_600x.jpg?v=1634798681" alt="" />
+          <h3 className='h3_edit text-center'>Analog For Girls</h3>
+           <p className='product_p_edit text-center'>Rs.200.00</p>
+           <button className='button_hover'>Add to Card</button>
 
+          <div className="icons_edit">
+           <p><AiOutlineHeart /></p>
+           </div>
+           <div className="icons_edit1">
+           <p>< AiOutlineSearch/></p>
+           </div>
           </div>
-          <div>
+          <div className='about_box col-12'>
           <img src="https://cdn.shopify.com/s/files/1/0564/2705/3216/products/shop-3_600x.jpg?v=1634798681" alt="" />
+          
+          <h3 className='h3_edit text-center'>Analog For Girls</h3>
+           <p className='product_p_edit text-center'>Rs.200.00</p>
+           <button className='button_hover'>Add to Card</button>
 
+          <div className="icons_edit">
+           <p><AiOutlineHeart /></p>
+           </div>
+           <div className="icons_edit1">
+           <p>< AiOutlineSearch/></p>
+           </div>
           </div>
-          <div>
+          <div className='about_box col-12'>
           <img src="https://cdn.shopify.com/s/files/1/0564/2705/3216/products/shop-2_600x.jpg?v=1634798681" alt="" />
+          <h3 className='h3_edit text-center'>Analog For Girls</h3>
+           <p className='product_p_edit text-center'>Rs.200.00</p>
+           <button className='button_hover'>Add to Card</button>
 
+          <div className="icons_edit">
+           <p><AiOutlineHeart /></p>
+           </div>
+           <div className="icons_edit1">
+           <p>< AiOutlineSearch/></p>
+           </div>
           </div>
-          <div>
+          <div className='about_box col-12'>
           <img src="https://cdn.shopify.com/s/files/1/0564/2705/3216/products/shop-1_600x.jpg?v=1634798681" alt="" />
+          <h3 className='h3_edit text-center'>Analog For Girls</h3>
+           <p className='product_p_edit text-center'>Rs.200.00</p>
+           <button className='button_hover'>Add to Card</button>
 
+          <div className="icons_edit">
+           <p><AiOutlineHeart /></p>
+           </div>
+           <div className="icons_edit1">
+           <p>< AiOutlineSearch/></p>
+           </div>
           </div>
         </Slider>
                 </div>

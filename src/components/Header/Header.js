@@ -2,13 +2,16 @@ import React from 'react'
 import './Header.css'
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
+
 import { HiOutlineShoppingBag } from 'react-icons/hi';
-
-
 import { Link } from 'react-router-dom';
 
 
-const Header = () => {
+
+
+const Header = ({openSidebar}) => {
+ 
+  
   return (
     <header className='Header py-3'>
       <div className="container">
@@ -32,8 +35,16 @@ const Header = () => {
             <div className="right">
               <span><AiOutlineHeart /></span>
               <span><AiOutlineSearch /></span>
-              <span className='span_edit'><HiOutlineShoppingBag /></span>
+              
+              <span className='span_edit' onClick={openSidebar}><HiOutlineShoppingBag /></span>
               <span className='span_count'>0</span>
+              
+              
+              
+
+              
+             
+              
             </div>
           </div>
         </div>

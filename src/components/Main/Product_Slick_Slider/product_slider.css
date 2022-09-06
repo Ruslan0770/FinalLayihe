@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .top h4{
     color: #a99577 !important;
     font-size: 16px !important;
@@ -6,3 +11,96 @@
     font-size: 50px;
     font-weight: 400;
 }
+.products img{
+    width: 100%;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+.edit{
+    position: relative;
+}
+.icons_edit{
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 111111111;
+    top: 20ch;
+    margin-left: 10px;
+    display: none;
+    transition: 2s;
+
+}
+
+.icons_edit1{
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 111111111;
+    top: 13ch;
+    margin-left: 10px;
+    display: none;
+   transition: 2s;
+
+}
+
+    
+
+    
+.icons_edit p{
+    margin-left: 6px;
+}
+.icons_edit1 p{
+    margin-left: 6px;
+}
+ .about_box:hover .icons_edit{
+   display: block;
+   background-color: #a99577;
+   color: white;
+ }
+
+ .about_box:hover .icons_edit1{
+    display: block;
+   background-color: #a99577;
+   color: white;
+}
+.about_box:hover img{
+    opacity: .7;
+    transform: scale(0.95);
+}
+.button_hover{
+ display: none;
+}
+ 
+.about_box:hover .h3_edit{
+    display: none;
+}
+.about_box:hover .product_p_edit{
+    display: none;
+}
+.about_box:hover .button_hover{
+    display: block;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 992px){
+    .button_hover{
+        display: inline-block;
+    }
+    .about_box:hover .button_hover{
+        margin-left: 3px;
+        margin-top: 30px;
+    }
+    .products{
+        width: 100%;
+        margin-left: 20px;
+    }
+   
+}
+
+
+
